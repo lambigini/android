@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Racing Score</string>
+    <string name="add10Points">10 Points</string>
+    <string name="add20Points">20 Points</string>
+    <string name="add30Points">30 Points</string>
+    <string name="score">0</string>
+    <string name="teamBMW">Team BMW</string>
+    <string name="teamMercesdes">Team Mercedes</string>
+</resources>
