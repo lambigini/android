@@ -26,33 +26,35 @@
             android:layout_height="wrap_content"
             android:text="@string/first_question_population"
             android:textSize="18sp" />
-<RadioGroup
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/radioButton_q1_300M"
-            style="@style/general"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="300 Million" />
 
-        <RadioButton
-            android:id="@+id/radioButton_q1_329M"
-            style="@style/general"
+        <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="329 Million" />
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/radioButton_q1_350M"
-            style="@style/general"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="350 Million" />
-</RadioGroup>
+            <RadioButton
+                android:id="@+id/radioButton_q1_300M"
+                style="@style/general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="300 Million" />
+
+            <RadioButton
+                android:id="@+id/radioButton_q1_329M"
+                style="@style/general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="329 Million" />
+
+            <RadioButton
+                android:id="@+id/radioButton_q1_350M"
+                style="@style/general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="350 Million" />
+        </RadioGroup>
 
         <TextView
             style="@style/general"
@@ -60,10 +62,12 @@
             android:layout_height="wrap_content"
             android:text="@string/second_question_yesNo"
             android:textSize="18sp" />
-<RadioGroup
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/radioButton_q2_yes"
                 android:layout_width="wrap_content"
@@ -71,6 +75,7 @@
                 android:layout_weight="1"
                 android:onClick="onRadioButtonClicked"
                 android:text="Yes" />
+
             <RadioButton
                 android:id="@+id/radioButton_q2_no"
                 android:layout_width="wrap_content"
@@ -79,8 +84,7 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="No" />
 
-</RadioGroup>
-
+        </RadioGroup>
 
         <TextView
             style="@style/general"
@@ -155,18 +159,20 @@
             android:layout_gravity="right"
             android:onClick="getScore"
             android:text="@string/button_summary" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Score"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/showScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>
