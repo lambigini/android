@@ -5,5 +5,6 @@
 
     <dimen name="main_activity_margin_left">30dp</dimen>
     <dimen name="main_activity_item_height">20dp</dimen>
+    <dimen name="song_activity_padding">16dp</dimen>
 
 </resources>

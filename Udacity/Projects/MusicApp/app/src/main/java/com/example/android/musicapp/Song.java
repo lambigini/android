@@ -18,9 +18,9 @@ public class Song {
     }
 
     //get the song name
-    public String getmSongName() { return  mSongName; }
+    public String getSongName() { return  mSongName; }
 
     //get the artist
-    public  String getmArtist() { return mArtist;}
+    public  String getArtist() { return mArtist;}
 
 }

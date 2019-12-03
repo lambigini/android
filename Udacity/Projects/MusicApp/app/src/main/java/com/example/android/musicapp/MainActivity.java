@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView song_category = (TextView) findViewById(R.id.song_category);
+        TextView playlists_category = (TextView) findViewById(R.id.playlists_category);
 
         song_category.setOnClickListener(new View.OnClickListener() {
                                              @Override
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
                                                  startActivity(song_category_intent);
                                              }
                                          });
+
+        playlists_category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent playlists_category_intent = new Intent(MainActivity.this, playlistActivity.class);
+                startActivity(playlists_category_intent);
+            }
+        });
 
 
 
