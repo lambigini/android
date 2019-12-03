@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView song_category = (TextView) findViewById(R.id.song_category);
         TextView playlists_category = (TextView) findViewById(R.id.playlists_category);
+        TextView recentlyDownload_category = (TextView) findViewById(R.id.recentlyDownload_category);
 
         song_category.setOnClickListener(new View.OnClickListener() {
                                              @Override
@@ -30,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent playlists_category_intent = new Intent(MainActivity.this, playlistActivity.class);
                 startActivity(playlists_category_intent);
+            }
+        });
+
+        recentlyDownload_category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent recentlyDownload_intent = new Intent(MainActivity.this, recentlyDownload.class);
+                startActivity(recentlyDownload_intent);
             }
         });
 
