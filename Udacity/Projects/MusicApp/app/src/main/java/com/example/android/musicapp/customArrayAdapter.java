@@ -18,9 +18,9 @@ public class customArrayAdapter extends ArrayAdapter<Song> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if an existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
@@ -28,20 +28,20 @@ public class customArrayAdapter extends ArrayAdapter<Song> {
         Song currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID song_name
-        TextView songNameTextView = (TextView) listItemView.findViewById(R.id.song_name);
+        TextView songNameTextView = (TextView) convertView.findViewById(R.id.song_name);
         // Get the song Name from the currentSong object and set this text on
         // the song name TextView.
         songNameTextView.setText(currentSong.getSongName());
 
         // Find the TextView in the list_item.xml layout with the ID default_text_view.
-        TextView artistTextView = (TextView) listItemView.findViewById(R.id.song_artist);
+        TextView artistTextView = (TextView) convertView.findViewById(R.id.song_artist);
         // Get the artist from the currentSong object and set this text on
         // the artist TextView.
         artistTextView.setText(currentSong.getArtist());
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.
-        return listItemView;
+        return convertView;
     }
 
 

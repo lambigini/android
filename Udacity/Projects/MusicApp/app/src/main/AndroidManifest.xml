@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recentlyDownload"></activity>
-        <activity android:name=".playlistActivity" />
-        <activity android:name=".songActivity" />
+        <activity android:name=".recentlyDownload" android:label="@string/RecentlyDownload" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".playlistActivity" android:label="@string/Playlists" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".songActivity" android:label="@string/Song" android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
