@@ -23,6 +23,10 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
+    <color name="status_bas">#2F1D1A</color>
+
+    <color name="miwok_category">#4A312A</color>
+
     <!-- Background color for the numbers category -->
     <color name="category_numbers">#FD8E09</color>
 
@@ -34,4 +38,8 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <color name="words_font">#FFFFFF</color>
+
+    <color name="image_background">#FFF7DA</color>
 </resources>

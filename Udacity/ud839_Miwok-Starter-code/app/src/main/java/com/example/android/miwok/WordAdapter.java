@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,14 +20,16 @@ import java.util.ArrayList;
  */
 public class WordAdapter extends ArrayAdapter<Word>  {
 
+    private int mColorResourceId;
     /**
      * Create a new {@link WordAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param words is the list of {@link Word}s to be displayed.
      */
-    public WordAdapter(Context context, ArrayList<Word> words) {
+    public WordAdapter(Context context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);
+        mColorResourceId = colorResourceId;
     }
 
     @Override
@@ -37,6 +40,8 @@ public class WordAdapter extends ArrayAdapter<Word>  {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
+
+
 
         // Get the {@link Word} object located at this position in the list
         Word currentWord = getItem(position);
@@ -55,6 +60,12 @@ public class WordAdapter extends ArrayAdapter<Word>  {
 
         ImageView imageResourceId = (ImageView) listItemView.findViewById(R.id.imageResouceId);
         imageResourceId.setImageResource(currentWord.getImageResourceId());
+
+        View textContainer = listItemView.findViewById(R.id.text_container);
+
+        int color = ContextCompat.getColor(getContext(),mColorResourceId);
+
+        textContainer.setBackgroundColor(color);
 
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
