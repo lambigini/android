@@ -1,40 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height"
     android:orientation="horizontal">
     <ImageView
         android:id="@+id/image"
-        android:layout_width="@dimen/image_height"
-        android:layout_height="@dimen/image_width"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
         android:background="@color/image_background"
         android:src="@drawable/family_daughter"/>
-<LinearLayout
+<RelativeLayout
     android:id="@+id/text_container"
     android:layout_width="match_parent"
     android:layout_height="@dimen/image_height"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/image"
+    android:paddingLeft="@dimen/padding_16dp"
     android:orientation="vertical">
     <TextView
         android:id="@+id/miwok_text_view"
-        android:layout_height="0dp"
+        android:layout_height="44dp"
         android:layout_width="match_parent"
         android:layout_weight="1"
-        android:padding="10dp"
-        android:textColor="@color/words_font"
-        android:textSize="18sp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         tools:text="lutti"/>
     <TextView
         android:id="@+id/default_text_view"
-        android:layout_height="0dp"
+        android:layout_height="44dp"
         android:layout_width="match_parent"
+        android:layout_below="@id/miwok_text_view"
         android:layout_weight="1"
-        android:padding="10dp"
-        android:textColor="@color/words_font"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
         tools:text="one"/>
-</LinearLayout>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_16dp"
+        android:src="@drawable/baseline_play_arrow_black_24dp" />
 
-</LinearLayout>
+
+</RelativeLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:selectableItemBackground"/>
+
+</RelativeLayout>
