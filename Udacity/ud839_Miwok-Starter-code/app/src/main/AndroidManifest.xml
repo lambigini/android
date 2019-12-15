@@ -8,10 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PhrasesActivity" android:label="@string/category_phrases_label"></activity>
-        <activity android:name=".ColorsActivity" android:label="@string/category_colors_label"/>
-        <activity android:name=".FamilyMembersActivity" android:label="@string/category_familyMembers_label"/>
-        <activity android:name=".NumbersActivity" android:label="@string/category_numbers_label" />
+        <activity android:name=".PhrasesActivity" android:label="@string/category_phrases_label"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ColorsActivity" android:label="@string/category_colors_label" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".FamilyMembersActivity" android:label="@string/category_familyMembers_label" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NumbersActivity" android:label="@string/category_numbers_label" android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
