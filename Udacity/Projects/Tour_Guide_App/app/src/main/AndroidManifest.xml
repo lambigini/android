@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".WeatherActivity" android:parentActivityName=".MainActivity" android:label="@string/category_weather"></activity>
+        <activity android:name=".RestaurantsActivity" android:parentActivityName=".MainActivity" android:label="@string/category_restaurants"/>
+        <activity android:name=".ThingsToDoActivity" android:parentActivityName=".MainActivity" android:label="@string/category_thingsToDo"/>
+        <activity android:name=".AboutActivity" android:parentActivityName=".MainActivity" android:label="@string/category_about"/>
+        <activity android:name=".MainActivity" android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

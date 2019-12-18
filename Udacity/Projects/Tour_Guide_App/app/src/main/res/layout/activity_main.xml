@@ -8,21 +8,25 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/category_about"
         style="@style/CategoryStyle"
         android:background="#4285F4"
         android:text="@string/category_about"/>
 
     <TextView
+        android:id="@+id/category_thingsToDo"
         style="@style/CategoryStyle"
         android:background="#34A853"
         android:text="@string/category_thingsToDo"/>
 
     <TextView
+        android:id="@+id/category_restaurants"
         style="@style/CategoryStyle"
         android:background="#FBBC05"
         android:text="@string/category_restaurants"/>
 
     <TextView
+        android:id="@+id/category_weather"
         style="@style/CategoryStyle"
         android:background="#EA4335"
         android:text="@string/category_weather"/>
