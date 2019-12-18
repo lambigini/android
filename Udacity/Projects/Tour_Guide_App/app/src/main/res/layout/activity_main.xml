@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:background="#4285F4"
+        android:text="@string/category_about"/>
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:background="#34A853"
+        android:text="@string/category_thingsToDo"/>
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:background="#FBBC05"
+        android:text="@string/category_restaurants"/>
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:background="#EA4335"
+        android:text="@string/category_weather"/>
+
+</LinearLayout>
