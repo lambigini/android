@@ -18,14 +18,14 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        ArrayList<String> array_about = new ArrayList<String>();
-        array_about.add("City in California");
-        array_about.add("Anaheim is a city outside Los Angeles, in Southern California.");
+        ArrayList<StringObject> array_about = new ArrayList<StringObject>();
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,array_about );
+        array_about.add(new StringObject("City in California","Anaheim is a city outside Los Angeles, in Southern California." ));
+
+        InfoAdapter infoAdapter = new InfoAdapter(this, array_about );
 
         ListView listView_activity_about = (ListView) findViewById(R.id.activity_about);
-        listView_activity_about.setAdapter(arrayAdapter);
+        listView_activity_about.setAdapter(infoAdapter);
 
     }
 
